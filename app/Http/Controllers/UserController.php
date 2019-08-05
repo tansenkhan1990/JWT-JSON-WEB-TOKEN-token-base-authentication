@@ -23,6 +23,7 @@ class UserController extends Controller
             return response()->json(['error' => 'could_not_create_token'], 500);
         }
 
+        //return $token;
         return response()->json(compact('token'));
     }
 
